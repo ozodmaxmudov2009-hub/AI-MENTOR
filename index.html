@@ -87,15 +87,6 @@
   <div id="results"></div>
 </div>
 
-<!-- 🔥 QUYIDA @admissionss_bot QO‘SHILDI -->
-<div class="text-center mt-12 mb-6 text-gray-300 text-lg">
-  Telegram botimiz: 
-  <a href="https://t.me/admissionss_bot" target="_blank" class="text-purple-400 underline hover:text-purple-300">
-    @admissionss_bot
-  </a>
-</div>
-
-
 <script>
 const data = {
   "orta_asrlar_tarixi": {title:"O'rta asrlar tarixi", emoji:"🏰", videos:["https://www.youtube.com/watch?v=Cg5psulqbCw&list=PL8e9VU7Ele9UeMsib_w_69ObWLFG-QxaL"], articles:["https://uz.wikipedia.org/wiki/O%CA%BBrta_asr"]},
@@ -104,14 +95,14 @@ const data = {
   "kimyo_asoslari": {title:"Kimyo asoslari", emoji:"🧪", videos:["https://www.youtube.com/watch?v=j2O5u8fbwrI&list=PLC0-B9J9LnvmcuGHZd7jhZMxD1j2HUHTQ"], articles:["https://cheminfo.uz/"]},
   "biologiya": {title:"Biologiya", emoji:"🧬", videos:["https://www.youtube.com/watch?v=wZdWkBVJ_P0&list=PLOLz2vuEAiKKP0x3a7iYx98TGqGmvNcX9"], articles:["https://aboo-edu.uz/category/biologiya/"]},
   "geografiya": {title:"Geografiya", emoji:"🌍", videos:["https://www.youtube.com/watch?v=5rhlY_5lW-w&list=PLOLz2vuEAiKJGVkDUJeIheedcJGp9kM5G"], articles:["https://www.iupr.ru/_files/ugd/b06fdc_46ca3d69bd9640aabef18f8c1ef6b7ab.pdf?index=true"]},
-  "algoritmlar": {title:"Algoritmlar", emoji:"🖥", videos:["https://www.youtube.com/watch?v=B56tkdlfuec&list=PLwsopmzfbOn8aR9xpU7ePK30scihq4zuW"], articles:["https://www.texnoman.uz/posts/tag/algoritm"]},
+  "algoritmlar": {title:"Algoritmlar", emoji:"🖥️", videos:["https://www.youtube.com/watch?v=B56tkdlfuec&list=PLwsopmzfbOn8aR9xpU7ePK30scihq4zuW"], articles:["https://www.texnoman.uz/posts/tag/algoritm"]},
   "programming_html": {title:"HTML", emoji:"📄", videos:["https://www.youtube.com/watch?v=9dUhZq9dkHM&list=PLpDyZ4xZcDg_aAzP6pDD1PRsYCSdheveS"], articles:["https://uzbekdevs.uz/maqolalar/html-o-zi-nima-htmlning-kelib-chiqish-tarixiga-nazar"]},
   "programming_js": {title:"JavaScript asoslari", emoji:"💻", videos:["https://www.youtube.com/watch?v=q8yclECd9CY&list=PLpDyZ4xZcDg8fRiY6xgsQcDiMjNYJhNjE"], articles:["https://www.texnoman.uz/posts/tag/javascript"]},
   "adabiyot": {title:"Adabiyot", emoji:"📚", videos:["https://www.youtube.com/watch?v=ODIAkLSdwv8&list=PLOLz2vuEAiKIXmZ-GnWIpElQW1ijl0Wjp&pp=0gcJCbAEOCosWNin"], articles:["https://n.ziyouz.com/portal-haqida/xarita/maqolalar"]},
   "ingliz_tili": {title:"Ingliz tili", emoji:"🇬🇧", videos:["https://www.youtube.com/watch?v=d-fvgkbTED0&list=PLkREkayoYCyI9KGsZ2TfeVccRv9zqP0gl"], articles:["https://kun.uz/news/2018/02/09/kunuz-sinfhonasi-nima-ucun-ingliz-tilini-butun-dune-tan-olgan"]},
   "iqtisodiyot": {title:"Iqtisodiyot kirish", emoji:"💰", videos:["https://www.youtube.com/watch?v=S-YA-V9eOlg&list=PLGO4HdV8zhh_kp296GEE7HHRAfLVgtihE"], articles:["https://api.scienceweb.uz/storage/publication_files/1916/9723/6440c14737076___STARS%20conf%20Yashirin%20iqtisodiyotning%20jamiyatga%20tasiri.pdf"]},
   "psixologiya": {title:"Psixologiya", emoji:"🧠", videos:["https://www.youtube.com/watch?v=_1r2FihbgPA&list=PLeRD4s8cOayJA5P-ng5GjpWiWC36fse-g"], articles:["https://api.scienceweb.uz/storage/publication_files/2531/10613/646510766be61___Oliy%20talim%20tizimida%20psixologik%20xizmatni....%202023NN%20(3).pdf"]},
-  "tarix_umumiy": {title:"Umumiy tarix", emoji:"🏛", videos:["https://www.youtube.com/watch?v=4jh5iWJ7Cds&list=PLOLz2vuEAiKKaLFjU_r3oBWarzSW5mgyY&pp=0gcJCbAEOCosWNin"], articles:["https://aboo-edu.uz/category/tarix/"]},
+  "tarix_umumiy": {title:"Umumiy tarix", emoji:"🏛️", videos:["https://www.youtube.com/watch?v=4jh5iWJ7Cds&list=PLOLz2vuEAiKKaLFjU_r3oBWarzSW5mgyY&pp=0gcJCbAEOCosWNin"], articles:["https://aboo-edu.uz/category/tarix/"]},
   "astronomiya": {title:"Astronomiya", emoji:"🌌", videos:["https://www.youtube.com/watch?v=QVSQxMU4pH0&list=PLGO4HdV8zhh_Tp_1xN0CP4KSSGH099tqT"], articles:["https://uz.wikipedia.org/wiki/Astronomiya"]},
   "botanika": {title:"Botanika", emoji:"🌿", videos:["https://www.youtube.com/watch?v=ICANnAVowFc&list=PLbiA0hjB8SkRl3gdHJ_QdK-165AUDr5jk"], articles:["https://uz.wikipedia.org/wiki/Botanika"]},
   "zoologiya": {title:"Zoologiya", emoji:"🐾", videos:["https://www.youtube.com/watch?v=T0kdMaA3LUY&list=PLQoqfbdwNtFdaErzg4B1h4lHo3S24ZMQd"], articles:["https://uz.wikipedia.org/wiki/Zoologiya"]},
@@ -131,10 +122,12 @@ function recommend() {
 
   const item = data[subject];
 
+  // Robot jump animation
   const robot = document.getElementById('robot');
   robot.style.transform = "translate(-50%, -40px) rotate(-10deg)";
   setTimeout(() => robot.style.transform = "translateX(-50%)", 400);
 
+  // Floating emoji
   const emoji = document.createElement('div');
   emoji.textContent = item.emoji;
   emoji.className = "floating-emoji";
@@ -144,6 +137,7 @@ function recommend() {
   document.body.appendChild(emoji);
   setTimeout(() => emoji.remove(), 1500);
 
+  // Display results
   resultsDiv.innerHTML = `
     <div class='card fade-in'>
       <h2 class='text-2xl font-bold text-purple-400 mb-3'>${item.title}</h2>
@@ -159,11 +153,12 @@ function recommend() {
   `;
 }
 
+// Robot follows mouse
 document.addEventListener('mousemove', (e) => {
   const robot = document.getElementById('robot');
-  robot.style.left = `${e.clientX}px`;
+  const x = e.clientX;
+  robot.style.left = `${x}px`;
 });
 </script>
-
 </body>
 </html>
