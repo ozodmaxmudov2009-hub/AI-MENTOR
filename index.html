@@ -80,6 +80,10 @@
       <option value="mantiq">Mantiq fanlari</option>
       <option value="falsafa">Falsafa</option>
       <option value="huquq_asoslari">Huquq asoslari</option>
+
+      <!-- ✅ Added Informatika -->
+      <option value="informatika">Informatika</option>
+
     </select>
     <button onclick="recommend()" class="w-full bg-purple-600 p-3 rounded-xl hover:bg-purple-700 transition-colors">Tavsiya Berish</button>
   </div>
@@ -108,7 +112,15 @@ const data = {
   "zoologiya": {title:"Zoologiya", emoji:"🐾", videos:["https://www.youtube.com/watch?v=T0kdMaA3LUY&list=PLQoqfbdwNtFdaErzg4B1h4lHo3S24ZMQd"], articles:["https://uz.wikipedia.org/wiki/Zoologiya"]},
   "mantiq": {title:"Mantiq fanlari", emoji:"🧩", videos:["https://www.youtube.com/watch?v=O5jGdkezXcQ&pp=ygUfbWFudGlxIGZhbmxhcmkgbm9sZGFuIG8ncmdhbmlzaA%3D%3D"], articles:["https://xadicha.uz/oz/news/20"]},
   "falsafa": {title:"Falsafa", emoji:"🤔", videos:["https://www.youtube.com/watch?v=39H0tKzhJW8&pp=ygUYZmFsc2FmYSBub2xkYW4gbydyZ2FuaXNo"], articles:["https://uz.wikipedia.org/wiki/Falsafa"]},
-  "huquq_asoslari": {title:"Huquq asoslari", emoji:"⚖️", videos:["https://www.youtube.com/watch?v=H_B-cGRZPa8&list=PLOLz2vuEAiKJhsL0uBGYYMGSv9S9ygEup"], articles:["https://old.eduportal.uz/Umumiyfiles/darsliklar/11/davlat_va_huquq_asoslari_11_uzb.pdf"]}
+  "huquq_asoslari": {title:"Huquq asoslari", emoji:"⚖️", videos:["https://www.youtube.com/watch?v=H_B-cGRZPa8&list=PLOLz2vuEAiKJhsL0uBGYYMGSv9S9ygEup"], articles:["https://old.eduportal.uz/Umumiyfiles/darsliklar/11/davlat_va_huquq_asoslari_11_uzb.pdf"]},
+
+  /* ✅ Added Informatika */
+  "informatika": {
+    title: "Informatika",
+    emoji: "💾",
+    videos: ["https://www.youtube.com/watch?v=lQyKo3kTvM4&list=PLV6IQEEtbQaINz7nPAU8NxNkLnI2I6OoE"],
+    articles: ["https://www.texnoman.uz/posts/tag/informatika"]
+  }
 };
 
 function recommend() {
@@ -122,12 +134,10 @@ function recommend() {
 
   const item = data[subject];
 
-  // Robot jump animation
   const robot = document.getElementById('robot');
   robot.style.transform = "translate(-50%, -40px) rotate(-10deg)";
   setTimeout(() => robot.style.transform = "translateX(-50%)", 400);
 
-  // Floating emoji
   const emoji = document.createElement('div');
   emoji.textContent = item.emoji;
   emoji.className = "floating-emoji";
@@ -137,7 +147,6 @@ function recommend() {
   document.body.appendChild(emoji);
   setTimeout(() => emoji.remove(), 1500);
 
-  // Display results
   resultsDiv.innerHTML = `
     <div class='card fade-in'>
       <h2 class='text-2xl font-bold text-purple-400 mb-3'>${item.title}</h2>
@@ -153,11 +162,9 @@ function recommend() {
   `;
 }
 
-// Robot follows mouse
 document.addEventListener('mousemove', (e) => {
   const robot = document.getElementById('robot');
-  const x = e.clientX;
-  robot.style.left = `${x}px`;
+  robot.style.left = e.clientX + "px";
 });
 </script>
 </body>
